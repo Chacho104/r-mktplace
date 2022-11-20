@@ -1,0 +1,41 @@
+.rmp__collection {
+    margin: 60px 105px;   
+}
+
+.rmp__collection-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.rmp__collection button {
+    padding-bottom: 16px;
+    width: 98px;
+    font: normal normal medium 12px/15px var(--font-family);
+    color: #000000;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.rmp__collection button.active {
+    color: #50b1b5;
+    border-bottom: 2px solid #50b1b5;
+}
+
+#activity {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .rmp__collection {
+        margin: 60px 10px;
+    }
+
+    .rmp__collection-toggle {
+        gap: 40px;
+    }
+}

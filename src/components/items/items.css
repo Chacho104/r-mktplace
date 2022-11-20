@@ -1,0 +1,71 @@
+.rmp__items {
+    border-top: 1px solid #e3e3e3;
+    margin-top: -1.5px;
+}
+
+.rmp__items-container {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rmp__items-container_nftcard {
+    width: 255px;
+    height: 319px;
+    background: #e3e3e3;
+    border-radius: 20px;
+
+    margin-bottom: 35px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.rmp__items-container_nftcard:hover {
+    opacity: 1;
+}
+
+.rmp__items-container_nftcard-content {
+    width: 211px;
+    height: 248px;
+    margin: 0 auto;
+}
+
+.media img {
+    width: 211px;
+    height: 189px;
+    padding-top: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.details__owner-type {
+    font: normal normal normal 20px/24px var(--font-family);
+    color: #1c1b1b;
+}
+
+.details__owner-creator {
+    font: normal normal medium 13px/16px var(--font-family);
+    color: #1C1B1B;
+}
+
+.details__owner-creator span {
+    font: normal normal 300 13px/16px var(--font-family);
+}
+
+.details__price p {
+    font: normal normal 300 13px/16px var(--font-family);
+    color: #1C1B1B;
+}
+
+.details__price-usd {
+    padding-top: 5px;
+}

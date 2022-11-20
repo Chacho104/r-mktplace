@@ -1,0 +1,194 @@
+.rmp__navbar {
+    background: url('../../assets/images/navbarbg@2x.png');
+    width: 100%;
+    height: 128px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 51px;
+}
+
+.rmp__navbar-links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rmp__navbar-links_logo img {
+    width: 157px;
+    height: 71px;
+}
+
+.rmp__navbar-links_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rmp__navbar-links_container-left,
+.rmp__navbar-links_container-right {
+    display: inline-flex;
+    align-items: center;
+}
+
+.rmp__navbar-links_container-left p:first-child {
+    margin-left: 1rem;    
+}
+
+.rmp__navbar-links_container-left p {
+    padding: 0 23px;
+    font: normal normal 600 12px/15px var(--font-family);
+    color: #fff;
+}
+
+.rmp__navbar-links_container-left p:hover,
+.rmp__navbar-links_container-right p:hover {
+    color: #dfdede;
+}
+
+.rmp__navbar-links_container-left p a svg {
+    color: #5fbdc1;
+}
+
+.rmp__navbar-links_container-right p {
+    padding: 0 16px;
+    font: normal normal 300 12px/15px var(--font-family);
+    color: #fff; 
+}
+
+.rmp__navbar-links_container-right button {
+    margin-left: 20px;
+    width: 133px;
+    height: 43px;
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    opacity: 0.4;
+
+    font: normal normal bold 12px/15px var(--font-family);
+    color: #5fbdc1;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.rmp__navbar-links_container-right button:hover {
+    opacity: 1;
+}
+
+.rmp__navbar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .rmp__navbar {
+        display: none;
+    }
+
+    .rmp__navbar-menu {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    .rmp__navbar-menu_logo {
+        margin-left: 20px;
+    }
+
+    .rmp__navbar-menu_logo img {
+        width: 100px;
+        height: 44px;
+    }
+
+    .rmp__navbar-menu .toggleMenu {
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .rmp__navbar-menu_container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .rmp__navbar-menu_nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    .rmp__navbar-menu_nav img {
+        width: 100px;
+        height: 44px;
+        padding-left: 20px;
+    }
+    
+    .rmp__navbar-menu_container-links {
+        height: auto;
+        width: 100%;
+        padding: 0px 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+
+    .rmp__navbar-menu_container-links-top {
+        width: 100%;
+        border-bottom: 1px solid #6c6c6c;
+        padding-bottom: 40px;
+    }
+    
+    .rmp__navbar-menu_container-links-top p {
+        font: normal normal 600 12px/15px var(--font-family);
+        color: #fff;
+        padding: 15px 0;
+    }
+
+    .rmp__navbar-menu_container-links-center {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .rmp__navbar-menu_container-links-center p {
+        font: normal normal 300 12px/15px var(--font-family);
+        color: #fff;
+        padding: 15px 0;
+    }
+
+    .rmp__navbar-menu_container-links-bottom {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .rmp__navbar-menu_container-links-bottom button {
+        width: 100%;
+        height: 43px;
+        background-color: #fff;
+        border-radius: 22px;
+        opacity: 0.4;
+
+        font: normal normal bold 12px/15px var(--font-family);
+        color: #5fbdc1;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .rmp__navbar-menu_container-links-bottom button:hover {
+        opacity: 1;
+    }
+}

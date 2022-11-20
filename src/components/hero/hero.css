@@ -1,0 +1,69 @@
+.rmp__hero {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.rmp__hero-banner {
+    width: 100%;
+    height: auto;
+    min-height: 135px;
+    position: relative;
+
+    background-image: url('../../assets/images/heroimg@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rmp__hero-banner .overlay {
+    background-image: linear-gradient(180deg, #000 0%, #0000003c 100%);
+    width: 100%;
+    height: 100%;
+    min-height: 135px;
+}
+
+.rmp__hero-banner h1 {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font: normal normal 300 40px/55px var(--font-family);
+    color: #fff;
+    text-align: center;
+}
+
+.rmp__hero-profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rmp__hero-profile img {
+    width: 100px;
+    height: 100px;
+    margin-top: -32px;
+    margin-bottom: 12px;
+    z-index: 1;
+}
+
+.rmp__hero-profile h2 {
+    font: normal normal medium 18px/22px var(--font-family);
+    color: #000;
+    text-align: center;
+}
+
+@media screen and (max-width: 660px) {
+    .rmp__hero-banner {
+        height: 250px;
+    }
+
+    .rmp__hero-profile img {
+        width: 150px;
+        height: 150px;
+        margin-top: -60px;
+    }
+}
